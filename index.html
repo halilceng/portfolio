@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halil Işık | Kişisel Portfolyo</title>
+    <meta name="description" content="Veri Bilimi, Full Stack Web ve Mobil Geliştirme Tutkunu Bilgisayar Mühendisi Adayı Halil Işık'ın kişisel portfolyo web sitesi.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Ambient Glows -->
+    <div class="ambient-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Halil<span>Işık</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Anasayfa</a></li>
+                    <li><a href="#about" class="nav-link">Hakkında</a></li>
+                    <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                    <li><a href="#projects" class="nav-link">Projeler</a></li>
+                    <li><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Menüyü Aç/Kapat" id="mobileToggle">
+                <!-- inline SVG menu icon -->
+                <svg class="menu-icon icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <!-- inline SVG close icon -->
+                <svg class="close-icon icon-svg hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Bilgisayar Mühendisi Adayı
+                </div>
+                <h1 class="hero-title">Merhaba, Ben <span class="gradient-text">Halil Işık</span>.</h1>
+                <h2 class="hero-subtitle">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Veri Bilimi, Full Stack Web ve Mobil Geliştirme konularında kendimi geliştiren, temiz kod prensiplerine inanan ve teknoloji topluluklarında aktif rol alan bir bilgisayar mühendisliği öğrencisiyim.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Projelerimi İncele</span>
+                        <!-- inline SVG arrow-right -->
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Bana Ulaşın</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract Illustrative Graphic -->
+                <div class="illustrative-card">
+                    <div class="card-header-bar">
+                        <span class="card-dot red"></span>
+                        <span class="card-dot yellow"></span>
+                        <span class="card-dot green"></span>
+                        <span class="card-title-tab">halil-isik.py</span>
+                    </div>
+                    <div class="card-code-body">
+                        <pre><code><span class="code-keyword">import</span> datetime
+
+<span class="code-keyword">class</span> <span class="code-class">ComputerEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-self">self</span>):
+        <span class="code-self">self</span>.name = <span class="code-string">"Halil Işık"</span>
+        <span class="code-self">self</span>.education = <span class="code-string">"EBYU Computer Engineering"</span>
+        <span class="code-self">self</span>.focus = [<span class="code-string">"Data Science"</span>, <span class="code-string">"Full Stack"</span>, <span class="code-string">"Mobile"</span>]
+        <span class="code-self">self</span>.status = <span class="code-string">"Developer"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">get_status</span>(<span class="code-self">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"🚀 Building high-quality, clean code solutions..."</span>
+
+halil = ComputerEngineer()
+print(halil.get_status())</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Aşağı Kaydır">
+                <div class="mouse-wheel"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kişisel Bilgiler</span>
+                <h2 class="section-title">Hakkımda</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info-cards">
+                    <div class="glass-card about-card">
+                        <div class="card-icon-wrapper">
+                            <!-- inline SVG graduation-cap -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                        </div>
+                        <h3>Eğitim</h3>
+                        <p class="card-highlight">Bilgisayar Mühendisliği</p>
+                        <p class="card-detail">Erzincan Binali Yıldırım Üniversitesi</p>
+                        <div class="card-footer-info">Lisans Programı</div>
+                    </div>
+                    
+                    <div class="glass-card about-card">
+                        <div class="card-icon-wrapper">
+                            <!-- inline SVG cpu -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 15h3"/><path d="M1 9h3"/><path d="M1 15h3"/></svg>
+                        </div>
+                        <h3>Yazılım Felsefesi</h3>
+                        <p class="card-highlight">Temiz Kod &amp; Ölçeklenebilirlik</p>
+                        <p class="card-detail">Projelerimde sürdürülebilir, yüksek performanslı ve Clean Code prensiplerine uygun mimariler tasarlıyorum.</p>
+                        <div class="card-footer-info">Mühendislik Yaklaşımı</div>
+                    </div>
+                </div>
+                
+                <div class="about-text-content glass-card">
+                    <h3>Kendimi Geliştirme Hikayem</h3>
+                    <p>
+                        Merhaba! Ben Halil, yazılım dünyasının sunduğu sınırsız problem çözme olanaklarına hayran bir <strong>Bilgisayar Mühendisliği</strong> öğrencisiyim. Eğitimim boyunca sadece teoride kalmayıp, projeler geliştirerek kendimi sürekli güncel tutuyorum.
+                    </p>
+                    <p>
+                        Teknolojiye olan ilgim geniş bir spektrumu kapsasa da, özellikle <strong>Veri Bilimi</strong>, <strong>Full Stack Web Geliştirme</strong> ve <strong>Mobil Uygulamalar</strong> üzerinde yoğunlaşıyorum. Geliştirdiğim projelerde sürdürülebilirlik, performans ve <strong>Clean Code (Temiz Kod)</strong> prensiplerini esas alıyorum.
+                    </p>
+                    <p>
+                        Projelerimde takım çalışmasına, düzenli iletişime ve planlı organizasyona önem veriyorum. Süreçleri otomatikleştirmeyi, karmaşık veri setlerini analiz etmeyi, modern kullanıcı arayüzleri tasarlamayı ve yenilikçi teknolojileri öğrenmeyi seviyorum.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <!-- inline SVG check-circle-2 -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Temiz ve Sürdürülebilir Kodlama</span>
+                        </div>
+                        <div class="highlight-item">
+                            <!-- inline SVG check-circle-2 -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Veri Analizi & Görselleştirme</span>
+                        </div>
+                        <div class="highlight-item">
+                            <!-- inline SVG check-circle-2 -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Modern & Etkileşimli Arayüzler</span>
+                        </div>
+                        <div class="highlight-item">
+                            <!-- inline SVG check-circle-2 -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Etkin İletişim & Takım Çalışması</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Teknoloji Yığınım</span>
+                <h2 class="section-title">Yetenekler</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1: Backend & Mimari -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon purple">
+                            <!-- inline SVG server -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                        </div>
+                        <h3>Backend & Mimari</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">C# & .NET 8.0</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ASP.NET Core MVC & Web API</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SaaS Architecture</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OOP (Nesne Yönelimli Programlama)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Clean Code & Temiz Kod Standartları</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2: Veritabanı & ORM -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon green">
+                            <!-- inline SVG database -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                        </div>
+                        <h3>Veritabanı & ORM</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MS SQL Server</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL (Pomelo)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Entity Framework Core 8</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Code-First & Migrations</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3: Modern Araçlar & Entegrasyonlar -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon blue">
+                            <!-- inline SVG layers -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </div>
+                        <h3>Modern Araçlar & Entegrasyonlar</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">SignalR (WebSockets)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Hangfire (Background Jobs)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UYAP (.udf) Entegrasyonu</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">QuestPDF</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">FluentValidation</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4: Frontend & Mobil -->
+                <div class="glass-card skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon yellow">
+                            <!-- inline SVG smartphone -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" x2="12" y1="18" y2="18"/></svg>
+                        </div>
+                        <h3>Frontend & Mobil</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 / CSS3 / Bootstrap</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Modern JavaScript (ES6+)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PWA & Glassmorphism UI</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flutter (Dart)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java & Python & C/C++</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Çalışmalarım</span>
+                <h2 class="section-title">Projeler</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project: DAv.A [FEATURED] -->
+                <div class="glass-card project-card featured" data-glow>
+                    <div class="project-featured-badge">
+                        <span class="badge-star">★</span>
+                        Öne Çıkan Yıldız Proje
+                    </div>
+                    <div class="project-featured-layout">
+                        <div class="project-featured-info">
+                            <div class="project-header">
+                                <div class="project-icon-box law-bg">
+                                    <!-- inline SVG Scale/Justice/Law -->
+                                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.2.2-2.7 1.8-6 0z"/><path d="M19 8v14"/><path d="M5 16l3-8 3 8c-.2.2-2.7 1.8-6 0z"/><path d="M8 8v14"/><path d="M2 21h20"/><path d="M12 2v19"/></svg>
+                                </div>
+                                <span class="project-category">Full Stack SaaS Platform</span>
+                            </div>
+                            <h3 class="project-title">DAv.A (Dava ve Avukat Otomasyon Platformu)</h3>
+                            <p class="project-description">
+                                Hukuk büroları için .NET 8 MVC ve Entity Framework Core 8 ile geliştirilmiş kapsamlı bir SaaS uygulamasıdır. Müvekkil dosyaları, duruşma takvimleri ve finansal süreçlerin entegre yönetilmesini sağlar. Gelişmiş menfaat çatışması algoritması ve resmi kurum entegrasyonları ile hukuk süreçlerini otomatikleştirir.
+                            </p>
+                            
+                            <div class="featured-highlights-list">
+                                <div class="featured-hl-item">
+                                    <span class="hl-bullet"></span>
+                                    <span><strong>SignalR:</strong> Duruşmalar ve dosya güncellemeleri için anlık gerçek zamanlı bildirimler.</span>
+                                </div>
+                                <div class="featured-hl-item">
+                                    <span class="hl-bullet"></span>
+                                    <span><strong>Hangfire:</strong> Arka planda çalışan periyodik hatırlatıcılar ve e-posta bildirim servisleri.</span>
+                                </div>
+                                <div class="featured-hl-item">
+                                    <span class="hl-bullet"></span>
+                                    <span><strong>UYAP (.udf) Entegrasyonu:</strong> Resmi dava dosyalarının sisteme doğrudan aktarılması ve parse edilmesi.</span>
+                                </div>
+                                <div class="featured-hl-item">
+                                    <span class="hl-bullet"></span>
+                                    <span><strong>Conflict Check:</strong> Menfaat çatışmalarını saniyeler içinde tespit eden özel algoritma.</span>
+                                </div>
+                                <div class="featured-hl-item">
+                                    <span class="hl-bullet"></span>
+                                    <span><strong>QuestPDF:</strong> Raporlar, finansal özetler ve duruşma listelerinin dinamik PDF üretimi.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-tags">
+                                <span>.NET 8 MVC</span>
+                                <span>EF Core 8</span>
+                                <span>SignalR</span>
+                                <span>Hangfire</span>
+                                <span>QuestPDF</span>
+                                <span>UYAP (.udf)</span>
+                                <span>Conflict Check</span>
+                                <span>MS SQL Server</span>
+                                <span>SaaS Mimari</span>
+                            </div>
+                            
+
+                        </div>
+                        <div class="project-featured-visual">
+                            <div class="featured-visual-box">
+                                <div class="visual-header">
+                                    <span class="visual-title">DAv.A SaaS Dashboard</span>
+                                    <span class="visual-status">Aktif</span>
+                                </div>
+                                <div class="visual-metrics">
+                                    <div class="metric-card">
+                                        <div class="metric-val">1,240+</div>
+                                        <div class="metric-lbl">Aktif Dosya</div>
+                                    </div>
+                                    <div class="metric-card">
+                                        <div class="metric-val">99.8%</div>
+                                        <div class="metric-lbl">Conflict Check</div>
+                                    </div>
+                                    <div class="metric-card">
+                                        <div class="metric-val">SignalR</div>
+                                        <div class="metric-lbl">Real-time Node</div>
+                                    </div>
+                                </div>
+                                <div class="visual-chart">
+                                    <div class="job-queue-title">Hangfire Görev Listesi</div>
+                                    <div class="job-list-visual">
+                                        <div class="job-item-visual done">
+                                            <span class="job-dot success"></span>
+                                            <span class="job-name">Duruşma Hatırlatma Görevi</span>
+                                            <span class="job-time">Tamamlandı</span>
+                                        </div>
+                                        <div class="job-item-visual running">
+                                            <span class="job-dot active-job"></span>
+                                            <span class="job-name">UYAP (.udf) Senkronizasyonu</span>
+                                            <span class="job-time">Çalışıyor</span>
+                                        </div>
+                                        <div class="job-item-visual scheduled">
+                                            <span class="job-dot pending"></span>
+                                            <span class="job-name">QuestPDF Haftalık Rapor Servisi</span>
+                                            <span class="job-time">Planlandı</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1: SkyCast -->
+                <div class="glass-card project-card" data-glow>
+                    <div class="project-header">
+                        <div class="project-icon-box weather-bg">
+                            <!-- inline SVG cloud-sun -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.9 8.5C14.8 6.5 12 6 10 7.5S7.3 11.2 8.5 13c1 .5 1.5 1.5 1.5 2.5v1H17a4 4 0 0 0 4-4c0-2-1.7-3.9-3.7-3.9a3.7 3.7 0 0 0-1.4.9Z"/></svg>
+                        </div>
+                        <span class="project-category">Web & Veri Analizi</span>
+                    </div>
+                    <h3 class="project-title">SkyCast</h3>
+                    <p class="project-description">
+                        Open-Meteo API kullanılarak geliştirilmiş, Chart.js ile hava durumu verilerini görselleştiren, PWA destekli ve Glassmorphism tasarıma sahip modern hava analizi uygulaması.
+                    </p>
+                    <div class="project-tags">
+                        <span>PWA</span>
+                        <span>Chart.js</span>
+                        <span>API Integration</span>
+                        <span>Glassmorphism</span>
+                        <span>Geolocation</span>
+                    </div>
+
+                </div>
+
+                <!-- Project 2: RoyalDrive -->
+                <div class="glass-card project-card" data-glow>
+                    <div class="project-header">
+                        <div class="project-icon-box car-bg">
+                            <!-- inline SVG car -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17h10"/><path d="M9 11V6"/></svg>
+                        </div>
+                        <span class="project-category">Full Stack Web</span>
+                    </div>
+                    <h3 class="project-title">RoyalDrive</h3>
+                    <p class="project-description">
+                        C# ve ASP.NET Core MVC ile tasarlanmış, Entity Framework Core Code First yaklaşımıyla veritabanı modellenmiş, kapsamlı bir yönetim paneli içeren online araç kiralama sistemi.
+                    </p>
+                    <div class="project-tags">
+                        <span>ASP.NET Core</span>
+                        <span>C#</span>
+                        <span>EF Core</span>
+                        <span>MS SQL</span>
+                        <span>MVC</span>
+                    </div>
+
+                </div>
+
+                <!-- Project 3: FitCoach -->
+                <div class="glass-card project-card" data-glow>
+                    <div class="project-header">
+                        <div class="project-icon-box fitness-bg">
+                            <!-- inline SVG activity -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <span class="project-category">Mobil Geliştirme</span>
+                    </div>
+                    <h3 class="project-title">FitCoach</h3>
+                    <p class="project-description">
+                        Java ve SQLite veritabanı mimarisi kullanılarak geliştirilmiş, kullanıcıların antrenman rutinlerini, kalori takibini ve gelişim istatistiklerini izleyen Android tabanlı mobil fitness uygulaması.
+                    </p>
+                    <div class="project-tags">
+                        <span>Android</span>
+                        <span>Java</span>
+                        <span>SQLite</span>
+                        <span>Mobile UI</span>
+                    </div>
+
+                </div>
+
+                <!-- Project 4: Online Sınav Sistemi -->
+                <div class="glass-card project-card" data-glow>
+                    <div class="project-header">
+                        <div class="project-icon-box exam-bg">
+                            <!-- inline SVG file-question -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9.1 11.8a3 3 0 0 1 5.8 1c0 1-1 1.5-1.6 2s-.9.9-.9 1.4"/><line x1="12" x2="12.01" y1="20" y2="20"/></svg>
+                        </div>
+                        <span class="project-category">Full Stack Web</span>
+                    </div>
+                    <h3 class="project-title">Online Sınav Sistemi</h3>
+                    <p class="project-description">
+                        ASP.NET Core mimarisi üzerinde inşa edilmiş, sınav güvenliğini sağlamak için özel anti-hile mekanizmasıyla donatılmış modern web tabanlı sınav platformu.
+                    </p>
+                    <div class="project-tags">
+                        <span>ASP.NET Core</span>
+                        <span>Web Security</span>
+                        <span>C#</span>
+                        <span>SQL Server</span>
+                    </div>
+
+                </div>
+
+                <!-- Project 5: Air Canvas -->
+                <div class="glass-card project-card" data-glow>
+                    <div class="project-header">
+                        <div class="project-icon-box canvas-bg">
+                            <!-- inline SVG palette -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.01445 19.1559 5.09238 19.2338 5.15585 19.3267C5.32285 19.5709 5.34283 19.8888 5.2078 20.1519C5.15641 20.252 5.08412 20.3341 4.93952 20.4984C4.48204 21.0182 3.99281 21.5741 4.21852 21.8906C4.44422 22.2071 5.25301 22 6.07923 22H12Z"/><circle cx="7.5" cy="10.5" r="1.5"/><circle cx="11.5" cy="7.5" r="1.5"/><circle cx="16.5" cy="9.5" r="1.5"/><circle cx="15.5" cy="14.5" r="1.5"/></svg>
+                        </div>
+                        <span class="project-category">Görüntü İşleme / Python</span>
+                    </div>
+                    <h3 class="project-title">Air Canvas</h3>
+                    <p class="project-description">
+                        Python ve OpenCV görüntü işleme kütüphanesi entegre edilerek geliştirilmiş, web kamerası önünde el veya parmak hareketleri ile havaya çizim yapmayı sağlayan yenilikçi bilgisayarlı görü projesi.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Computer Vision</span>
+                        <span>AI / ML Basics</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">İletişime Geçin</span>
+                <h2 class="section-title">İletişim</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Bir Proje Fikriniz mi Var?</h3>
+                    <p>
+                        Yazılım projeleri, veri analizi çalışmaları veya iş fırsatları ile ilgili her türlü soru, öneri veya iş birliği teklifi için bana ulaşabilirsiniz. En kısa sürede geri dönüş yapacağım.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <!-- inline SVG mail -->
+                                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <div class="detail-text">
+                                <span class="detail-label">E-posta</span>
+                                <a href="mailto:halil.isik990@gmail.com" class="detail-value">halil.isik990@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <!-- inline SVG map-pin -->
+                                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="detail-text">
+                                <span class="detail-label">Konum</span>
+                                <span class="detail-value">Erzincan, Türkiye</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-box">
+                        <h4>Sosyal Medya Hesaplarım</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/halil-i%C5%9F%C4%B1k-b0a86522a" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+                                <!-- inline SVG linkedin -->
+                                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="https://github.com/halilceng" target="_blank" class="social-icon-btn" aria-label="GitHub">
+                                <!-- inline SVG github -->
+                                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.2 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-card">
+                    <form id="contactForm" class="contact-form">
+                        <input type="hidden" name="access_key" value="f385847c-3f35-4cbd-8d02-42b91d9b9522">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Adınız Soyadınız</label>
+                                <input type="text" id="name" name="name" placeholder="Örn: Halil Işık" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta Adresiniz</label>
+                                <input type="email" id="email" name="email" placeholder="Örn: halil@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <input type="text" id="subject" name="subject" placeholder="Mesajınızın konusu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Mesaj Gönder</span>
+                            <!-- inline SVG send -->
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+                    
+                    <div id="formFeedback" class="form-feedback hidden">
+                        <div class="feedback-content">
+                            <!-- inline SVG check-circle -->
+                            <svg class="icon-svg success-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <h3>Mesajınız İletildi!</h3>
+                            <p>Bana ulaştığınız için teşekkür ederim. En kısa zamanda sizinle iletişime geçeceğim.</p>
+                            <button id="resetFormBtn" class="btn btn-secondary btn-sm">Yeni Mesaj Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Halil Işık. Tüm hakları saklıdır.</p>
+            </div>
+            <div class="footer-center">
+                <span class="footer-motto">Hello World was just the beginning.</span>
+            </div>
+            <div class="footer-right">
+                <a href="#home" class="scroll-to-top" aria-label="Yukarı Git">
+                    <!-- inline SVG arrow-up -->
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
